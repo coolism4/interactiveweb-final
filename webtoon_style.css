@@ -1,0 +1,597 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    line-height: 140%;
+}
+
+/* 헤더영역 */
+
+header{
+    width: 100%;
+    height: 5.2vw;
+    min-height: 72px;
+    top: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 4;
+}
+
+a img{
+    margin-left: 2.604vw;
+}
+
+.nav{
+    position: absolute;
+    margin-left: 38.28125vw;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    align-items: end;
+}
+
+.nav li{
+    transition: all 0.2s;
+}
+
+.nav a{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+    margin-right: 40px;
+    line-height: 140%;
+    transition: all 0.3s;
+}
+
+.nav a:hover{
+    color: #01D358;
+}
+
+.rightnav{
+    display: flex;
+    align-items: center;
+    margin-right: 2.604vw;
+}
+
+.searchbox{
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+}
+
+input[type="text"]{
+    width: 240px;
+    height: 36px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    background: #fafafa;
+    padding-left: 16px;
+    font-size: 12px;
+    margin-right: 8px;
+}
+
+.user{
+    width: 40px;
+    height: 40px;
+}
+
+.user img:nth-child(2){
+    display: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.user img:nth-child(2):hover{
+    transform: scale(1.2);
+}
+
+@media (max-width: 1060px){
+    .nav{
+        display: none;
+    }
+
+    .user img:nth-child(1){
+        display: none;
+    }
+    .user img:nth-child(2){
+        display: block;
+        position: fixed;
+        z-index: 6;
+    }
+}
+
+aside{
+    position: fixed;
+    z-index: 5;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(1.32vw);
+    transform: translateX(100vw);
+    transition: all 0.3s ease-in-out;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+aside.selected{
+    transform: translateX(0);
+}
+
+aside ul{
+    list-style: none;
+    align-items: center;
+}
+
+aside ul li{
+    transition: all 0.3s;
+    opacity: 0.6;
+    margin-bottom: 20px;
+}
+
+aside ul li:hover{
+    transform: scale(1.15);
+    opacity: 1;
+}
+
+aside li a{
+    font-size: 32px;
+    font-weight: 300;
+    color: #01D358;
+    text-decoration: none;
+}
+
+.container{
+    width: 100vw;
+    overflow: hidden;
+}
+
+.appeareffect{
+    width: 0%;
+    height: 21.2239583vw;
+    background: url(webtoonimg/appeareffect.png) center center;
+    background-size: cover;
+    position: absolute;
+    top: 58.59375vw;
+    z-index: -1;
+    transition: all 0.3s;
+}
+
+.appeareffect2{
+    width: 0%;
+    height: 840px;
+    background: url(webtoonimg/appeareffect2.png) center center;
+    background-size: cover;
+    position: absolute;
+    top: 1780px;
+    z-index: -1;
+    transition: all 0.3s;
+}
+
+.banner{
+    width: 100vw;
+    height: 44.27083vw;
+    background: url(webtoonimg/backgroundimg0.png) center center;
+    background-size: cover;
+    margin-bottom: 10.416vw;
+}
+.top{
+    width: 100%;
+    height: 5.2083vw;
+}
+.bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 7.8125vw;
+}
+
+.left h1{
+    color: #fff;
+    font-size: 2.34375vw;
+    font-weight: 700;
+}
+
+.left p{
+    color: #fff;
+    width: 28.64583vw;
+    font-size: 1.302083vw;
+    font-weight: 300;
+    opacity: 0.6;
+    margin-top: 1.5625vw;
+}
+
+.left a{
+    color: #fff;
+    width: 16vw;
+    padding: 0.78125vw 0;
+    font-size: 1.0416vw;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: none;
+    border: solid 1px #fff;
+    border-radius: 8px;
+    margin-top: 3.385416vw;
+    transition: all 0.3s;
+}
+
+.left a:hover{
+    border: solid 1px #01D358;
+    background-color: #01D358;
+    color: #fff;
+}
+
+.right{
+    width: 39.0625vw;
+    height: 39.0625vw;
+}
+
+.right img{
+    width: 39.0625vw;
+    height: 39.0625vw;
+}
+
+.page{
+    display: flex;
+    align-items: end;
+    height: 39.0625vw;
+    gap: 1.0416vw;
+}
+
+.circle{
+    width: 1.302083vw;
+    height: 1.302083vw;
+    border-radius: 100%;
+    background: #fff;
+    margin-bottom: 2.60416vw;
+    opacity: 0.4;
+}
+
+.circle:nth-child(1){
+    opacity: 1;
+}
+
+.recommend{
+    width: 100vw;
+    height: 24vw;
+    margin-bottom: 320px;
+}
+
+.recommend h1{
+    font-size: 2.34375vw;
+    font-weight: 700;
+    color: #333;
+    margin-left: 7.8125vw;
+    opacity: 0;
+    transition: all 0.6s;
+}
+
+.recommend span{
+    color: #01D358;
+}
+
+.cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5625vw;
+    margin-top: 2.60416vw;
+    margin-left: 7.8125vw;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 12.760416vw;
+    height: 16.6015625vw;
+    transition: all 0.3s;
+    opacity: 0;
+    border: solid 4px #333;
+}
+
+.card:hover{
+    transform: scale(1.2);
+}
+
+@keyframes appear{
+    0%{
+        transform: scale(1);
+        opacity: 0;
+    }
+    50%{
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.cardimg{
+    width: 100%;
+    height: 12.760416vw;
+    background-color: blue;
+}
+
+#cardimg0{
+    background: url(webtoonimg/cardimg0.png) center center;
+    background-size: cover;
+}
+
+#cardimg1{
+    background: url(webtoonimg/cardimg1.png) center center;
+    background-size: cover;
+}
+
+#cardimg2{
+    background: url(webtoonimg/cardimg2.png) center center;
+    background-size: cover;
+}
+
+#cardimg3{
+    background: url(webtoonimg/cardimg3.png) center center;
+    background-size: cover;
+}
+
+#cardimg4{
+    background: url(webtoonimg/cardimg4.png) center center;
+    background-size: cover;
+}
+
+#cardimg5{
+    background: url(webtoonimg/cardimg5.png) center center;
+    background-size: cover;
+}
+
+.cardtext{
+    width: 100%;
+    height: 3.90625vw;
+    background-color: #fff;
+}
+
+.cardtext p:nth-child(1){
+    font-size: 0.78125vw;
+    font-weight: 300;
+    margin-left: 0.78125vw;;
+    margin-top: 0.52083vw;;
+    margin-bottom: 4px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    opacity: 0.6;
+}
+
+.cardtext p:nth-child(2){
+    font-size: 0.9114583vw;
+    margin-left: 0.78125vw;;
+    font-weight: 300;
+}
+
+.days{
+    width: 100vw;
+    height: 54.6875vw;
+    transition: all 0.3s;
+    opacity: 0;
+}
+
+.days h1{
+    font-size: 2.34375vw;
+    font-weight: 700;
+    color: #333;
+    margin-left: 7.8125vw;
+}
+
+.days span{
+    color: #01D358;
+}
+
+.selectbar{
+    display: flex;
+    width: 55.989583vw;
+    margin-left: 7.8125vw;
+    margin-top: 5.2083vw;
+    border-radius: 5.2083vw;
+    padding: 0.78125vw 0;
+    gap: 3.2552083vw;
+    background: #fff;
+    border: solid 4px #333;
+    justify-content: center;
+}
+
+.days p{
+    color: #C0C0C0;
+    font-size: 1.5625vw;
+    font-weight: 700;
+    padding: 0.78125vw 1.0416vw;
+    border-radius: 100%;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.days p:hover{
+    background: #333;
+    color: #01D358;
+}
+
+.days p:nth-child(1){
+    background: #333;
+    color: #01D358;
+}
+
+.days ul{
+    white-space: nowrap;
+    margin-top: 2.60416vw;
+}
+
+.days li{
+    display: inline-block;
+    width: 100%;
+    height: 40vw;
+    list-style: none;
+    transition: all 0.3s;
+}
+
+.flexbox{
+    display: flex;
+    gap: 1.5625vw;
+}
+
+.webtoon{
+    overflow: hidden;
+}
+
+.part1{
+    width: 27.083vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5625vw;
+    margin-left: 7.8125vw;
+}
+
+.webtoon img{
+    width: 100%;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+#webtoon1{
+    width: 100%;
+    height: 13.5416vw;
+    background: url(webtoonimg/webtoon0.png) center center;
+    background-size: cover;
+    border: solid 4px #333;
+}
+
+#webtoon2{
+    width: 100%;
+    height: 24.0234375vw;
+    background: url(webtoonimg/webtoon1.png) center center;
+    background-size: cover;
+    border: solid 4px #333;
+}
+
+.part2{
+    width: 19.921875vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+#webtoon3{
+    width: 100%;
+    height: 21.7447916vw;
+    background: url(webtoonimg/webtoon2.png) center center;
+    background-size: cover;
+    border: solid 4px #333;
+}
+
+#webtoon4{
+    width: 100%;
+    height: 15.7552083vw;
+    background: url(webtoonimg/webtoon3.png) center center;
+    background-size: cover;
+    border: solid 4px #333;
+}
+
+.part3{
+    width: 34.2447916vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5625vw;
+}
+
+#webtoon5{
+    width: 100%;
+    height: 16.2760416vw;
+    background: url(webtoonimg/webtoon4.png) center center;
+    background-size: cover;
+    border: solid 4px #333;
+}
+
+#webtoon6{
+    width: 100%;
+    height: 21.2239583vw;
+    background: url(webtoonimg/webtoon5.png) center center;
+    background-size: cover;
+    border: solid 4px #333;
+}
+
+@keyframes make{
+    0%{
+        filter: blur(20px);
+        opacity: 0;
+    }
+    50%{
+        filter: blur(8px);
+        opacity: 1;
+    }
+    100%{
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+.leftbutton{
+    width: 7.8125vw;
+    height: 13.02083vw;
+    background-color: #fff;
+    border: solid 4px #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transform: translate(3.90625vw, -32vw);
+    cursor: pointer;
+}
+
+.leftbutton h1{
+    margin-left: 0;
+    font-size: 2.60416vw;
+    font-weight: 700;
+}
+
+.rightbutton{
+    width: 11.71875vw;
+    height: 19.53125vw;
+    background-color: #fff;
+    border: solid 4px #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    transform: translate(-1.302083vw, -32vw);
+    cursor: pointer;
+}
+
+.rightbutton h1{
+    margin-left: 0;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.page2{
+    background: red;
+}
+
+.page3{
+    background: red;
+}

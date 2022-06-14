@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    line-height: 140%;
+}
+
+.topbar{
+    width: 100vw;
+    height: 80px;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    margin-left: 40px;
+}
+
+.topbar p{
+    color: #fff;
+}
+
+.good{
+    margin-right: 40px;
+}
+
+.page{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.detailimg{
+    width: 550px;
+    height: 550px;
+    background: #fff;
+    margin-top: 80px;
+}
+
+#page1{
+    background-color: #fff;
+    opacity: 0;
+}
+
+#page2{
+    background-color: #fff;
+    opacity: 0;
+}
+
+#page3{
+    background-color: #fff;
+    opacity: 0;
+}
+
+#page4{
+    background-color: #fff;
+    opacity: 0;
+}
+
+#page5{
+    background-color: #fff;
+    opacity: 0;
+}
+
+
+#detailimg1{
+    background: url(detailimg/page0.png);
+    background-size: cover;
+}
+
+@keyframes bound{
+    0%{
+        transform: rotate(-5deg);
+    }
+
+    5%{
+        transform: rotate(0deg);
+    }
+
+    10%{
+        transform: rotate(5deg);
+    }
+
+    15%{
+        transform: rotate(0deg);
+    }
+
+    20%{
+        transform: rotate(-5deg);
+    }
+
+    25%{
+        transform: rotate(0deg);
+    }
+
+    30%{
+        transform: rotate(5deg);
+    }
+
+    35%{
+        transform: rotate(0deg);
+    }
+
+    40%{
+        transform: rotate(-5deg);
+    }
+
+    45%{
+        transform: rotate(0deg);
+    }
+
+    15%{
+        transform: rotate(0deg);
+    }
+
+    50%{
+        transform: rotate(0deg);
+    }
+
+    75%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+#detailimg2{
+    background: url(detailimg/page1.png);
+    background-size: cover;
+}
+
+#detailimg3{
+    background: url(detailimg/page2.png);
+    background-size: cover;
+}
+
+#detailimg4{
+    background: url(detailimg/page3.png);
+    background-size: cover;
+    transition: all 2s;
+}
+
+#detailimg5{
+    background: url(detailimg/page4.png);
+    background-size: cover;
+}
